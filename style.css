@@ -23,19 +23,20 @@ body {
 /* Loader */
 .loader {
   background: whitesmoke;
-  position: fixed;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Navigation */
 .navigation-container {
   position: fixed;
-  top: 0;
+  top: -20px;
+  border-top: 20px solid whitesmoke;
 }
 
 .navigation-items {
@@ -44,12 +45,11 @@ body {
 }
 
 .background {
-  background: rgba(245, 245, 245, 0.8);
   position: fixed;
   right: 0;
   width: 100%;
+  background: whitesmoke;
   height: 60px;
-  backdrop-filter: blur(5px);
   z-index: -1;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .clickable:hover {
-  color: rgb(13, 115, 218);
+  color: rgb(0, 99, 199);
 }
 
 /* Images Container */
@@ -118,6 +118,7 @@ body {
   body {
     line-height: 1.4rem;
     font-size: 0.9rem;
+    text-align: justify;
   }
 
   .images-container {
@@ -126,10 +127,6 @@ body {
 
   .card-title {
     font-size: 20px;
-  }
-
-  .card-text {
-    text-align: justify;
   }
 
   .save-confirmed {
